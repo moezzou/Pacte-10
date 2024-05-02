@@ -1,6 +1,9 @@
 .login-container {
   display: flex;
   height: 100vh;
+  background-color: rgb(18, 20, 62);
+
+
 }
 
 .login-box {
@@ -8,6 +11,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: none;
+  
 }
 
 

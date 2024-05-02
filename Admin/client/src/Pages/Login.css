@@ -1,33 +1,41 @@
 .login-container {
   display: flex;
   height: 100vh;
+  background: linear-gradient(90deg, rgba(39,9,121,1) 0%, rgb(255, 0, 0) 100%, rgba(255,0,0,1) 100%);
 }
 
-.login-box {
-  flex: 1; /* Take up 50% of the container */
+/* .login-box {
+  /* flex: 2; Take up 50% of the container */
+  /* align-self: center;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+  background: rgba(255, 255, 255, 0.548);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.7px);
+  -webkit-backdrop-filter: blur(1.7px);
+  height: 50%; }
+  */
+
+
 
 
 
 .knife-container {
   flex: 1; /* Take up 50% of the container */
-  background-color: rgb(18, 20, 62);
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   /* Align items at the start (top) */
 }
 
 .knife-image {
   width: 30%; /* Adjust the width as needed */
-  margin-top: 200px;
   margin-bottom:50px; /* Set margin from the top */
   /* Set margin from the bottom */
   color: white; /* Set text color to white */
   /* Center text horizontally */
+
   
   text-align: center;
 }

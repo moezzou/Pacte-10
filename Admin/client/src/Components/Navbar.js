@@ -12,7 +12,7 @@ const Navbar = ({ pagename }) => {
   }, []);
 
   return (
-    <nav style={{ backgroundColor: 'rgb(31, 41, 55)' }} className="bg-blue-900">
+    <nav style={{ backgroundColor: 'rgb(0, 0, 255)' }} className="bg-blue-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20 items-center">
           <h1 className="text-lg font-semibold text-white">{pagename}</h1>

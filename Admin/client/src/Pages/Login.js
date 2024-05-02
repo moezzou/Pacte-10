@@ -41,55 +41,45 @@ const Login = () => {
 
   return (
     <div className="login-container">
-      <div className="knife-container">
+      <div className="knife-container ">
         <div className="knife-image">
           <img src={knife} alt="Knife"></img>
         </div>
       </div>
-      <div className="login-box">
-        <div className="text-center">
-          <h1 className="text-3xl font-bold mt-4 mb-2 ">Welcome to Our Website!</h1>
-          <form onSubmit={loginUser} className="mx-auto mt-4 text-left">
-            <div className="mb-8">
-              <h2 className="text-3xl font-bold mt-4 mb-2 text-gray-600 text-left">Login</h2>
+      <div class="flex flex-col w-full justify-center	 md:w-1/2 xl:w-2/5 2xl:w-2/5 3xl:w-1/3 mx-auto p-8 md:p-10 2xl:p-12 3xl:p-14 bg-[#ffffff] shadow-xl">
+
+    <form onSubmit={loginUser} class="flex flex-col">
+        <div class="pb-2">
+            <label for="email" value={email}
+                onChange={(e) => setEmail(e.target.value)} type="email" class="block mb-2 text-base font-medium text-[#111827]">Email</label>
+            <div class="relative text-gray-400"><span class="absolute inset-y-0 left-0 flex items-center p-1 pl-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg></span> 
+                <input type="email" name="email" id="email" class="pl-12 mb-2 bg-gray-50 text-gray-600 border focus:border-transparent border-gray-300 sm:text-sm rounded-lg ring ring-transparent focus:ring-1 focus:outline-none focus:ring-gray-400 block w-full p-2.5 rounded-l-lg py-3 px-4" placeholder="name@supcom/isetcom.tn" autocomplete="off"></input>
             </div>
-            <div className="text-left">
-              <label className="block mb-1">Email</label>
-              <input
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Email"
-                type="email"
-                className="w-full px-4 py-2 border rounded-lg mb-4"
-              />
+        </div>
+        <div class="pb-6">
+            <label for="password" class="block mb-2 text-base font-medium text-[#111827]">Password</label>
+            <div class="relative text-gray-400"><span class="absolute inset-y-0 left-0 flex items-center p-1 pl-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-asterisk"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M12 8v8"></path><path d="m8.5 14 7-4"></path><path d="m8.5 10 7 4"></path></svg></span> 
+                <input value={password} onChange={(e) => setPassword(e.target.value)} type="password" name="password" id="password" placeholder="••••••••••" class="pl-12 mb-2 bg-gray-50 text-gray-600 border focus:border-transparent border-gray-300 sm:text-sm rounded-lg ring ring-transparent focus:ring-1 focus:outline-none focus:ring-gray-400 block w-full p-2.5 rounded-l-lg py-3 px-4" autocomplete="new-password" aria-autocomplete="list"></input>
             </div>
-            <div className="text-left">
-              <label className="block mb-1">Password</label>
-              <input
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                placeholder="Password"
-                type="password"
-                className="w-full px-4 py-2 border rounded-lg mb-4"
-              />
-            </div>
-            <div className="flex justify-between items-center">
-              <button
-                type="submit"
-                className="bg-blue-500 text-white py-2 px-4 rounded-sm"
-              >
-                Login
-              </button>
-            </div>
-            {/* Display error message with CSS styles */}
-            {errorMessage && (
+        </div>
+        <button type="submit" class="w-40 text-[#FFFFFF] bg-[#0000ff] focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-6 self-center">Login</button>
+        
+        {errorMessage && (
               <p className="text-center text-red-500 mt-4 bg-red-100 rounded-lg p-2">
                 {errorMessage}
               </p>
             )}
-          </form>
-        </div>
-      </div>
+
+
+            <div class="flex items-center justify-between pb-6">
+            <img src=""></img>
+        <img src=""></img>
+            </div>
+        
+
+
+    </form>
+</div>
     </div>
   );
 };

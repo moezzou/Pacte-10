@@ -30,7 +30,7 @@ const Dashboard = () => {
   return (
     <div className="flex flex-col h-screen bg-gray-100">
       <div className="flex flex-grow">
-        <div className={`w-1/4 h-full bg-gray-200 ${showMenu ? "" : "hidden"} lg:block`}>
+        <div className={`w-1/5 h-full bg-gray-200 ${showMenu ? "" : "hidden"} lg:block`}>
           <Menubar />
         </div>
         <div className="flex-1 sm:relative">

@@ -36,14 +36,13 @@ const Login = () => {
     <div className="login-container">
       <div className="knife-container">
       <div className="knife-image">
-        <img src={knife} alt="Knife" ></img>
+        <img src={knife} alt="Knife"></img>
         
         </div>
       </div>
      
       <div className="login-box">
         <div className="text-center">
-        <h1 className="text-3xl font-bold mt-4 mb-2 ">Welcome to Our Website!</h1>
           
          {/* <p className="text-gray-500">
             Please log in to continue or{" "}

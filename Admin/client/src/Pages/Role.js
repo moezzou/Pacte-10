@@ -18,13 +18,13 @@ const RoleManagement = () => {
   return (
     <div className="flex">
       <div
-        className={`w-1/4 h-auto h-screen bg-gray-200 ${
+        className={`w-1/5 h-auto h-screen bg-gray-200 ${
           showMenu ? "" : "hidden"
         } lg:block`}
       >
         <Menubar />
       </div>
-      <div className="w-3/4 h-screen">
+      <div className="w-3/4 h-screen flex-1">
         <MenuToggle showMenu={showMenu} handleMenuToggle={handleMenuToggle} />
         <Navbar pagename={"Vente des jetons"} />
         <div className="container mx-auto p-8">

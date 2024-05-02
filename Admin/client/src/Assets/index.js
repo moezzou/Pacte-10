@@ -24,6 +24,19 @@ import search from "./search.png";
 import knife from "./knife.png";
 import welcome from "./welcome.png";
 
+
+//added icons for sidebar
+
+import etudiants from "./etudiants.svg";
+import paiements from "./paiements.svg";
+import parametres from "./parametres.svg";
+import tdb from "./tdb.svg";
+
+
+
+
+
+
 export {
   logo,
   reedem,
@@ -50,4 +63,8 @@ export {
   search,
   knife,
   welcome,
+  etudiants,
+  paiements,
+  parametres,
+  tdb
 };

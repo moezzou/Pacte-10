@@ -13,7 +13,7 @@ const CustomerManagement = () => {
   return (
     <div className="flex">
       <div
-        className={`w-1/4 h-auto h-screen bg-gray-200 ${
+        className={`w-1/5 h-auto h-screen bg-gray-200 ${
           showMenu ? "" : "hidden"
         } lg:block`}
       >

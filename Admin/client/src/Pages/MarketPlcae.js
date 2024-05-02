@@ -19,7 +19,7 @@ const MarketPlace = () => {
       >
         <Menubar />
       </div>
-      <div className="w-3/4 h-screen">
+      <div className="w-3/4 h-screen flex-1">
         <Navbar pagename={"Market Place Management"} />
         <MenuToggle showMenu={showMenu} handleMenuToggle={handleMenuToggle} />
         <p>MarketPlace</p>

@@ -33,13 +33,13 @@ const Reclamations = () => {
   return (
     <div className="flex">
       <div
-        className={`w-1/4 h-auto h-screen bg-gray-200 ${
+        className={`w-1/5 h-auto h-screen bg-gray-200 ${
           showMenu ? "" : "hidden"
         } lg:block`}
       >
         <Menubar />
       </div>
-      <div className="w-3/4 h-screen">
+      <div className="w-3/4 h-screen flex-1">
         <Navbar pagename={"Réclamations"} />
         <MenuToggle showMenu={showMenu} handleMenuToggle={handleMenuToggle} />
         <div className="p-6">
